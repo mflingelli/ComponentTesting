@@ -46,6 +46,11 @@ Reihenfolge, in der die mit Anmerkungen annotierten Methoden ausgeführt werden:
 
 Wird ausgeführt, nachdem alle Testmethoden in der aktuellen Klasse ausgeführt wurden.
 
+### ```@AfterGroups```
+
+* Die Liste der Gruppen, nach denen diese Konfigurationsmethode ausgeführt wird.
+* Diese Methode wird garantiert kurz nach dem Aufruf der letzten Testmethode ausgeführt, die zu einer dieser Gruppen gehört.
+
 ### ```@AfterMethod```
 
 Wird nach jeder Testmethode ausgeführt.
@@ -70,13 +75,10 @@ public void initSimpleMathBeforeMethod() {
 }
 ```
 
-### ```@BeforeMethod```
-
-Wird vor jeder Testmethode ausgeführt.
-
 ### ```@BeforeGroups```
 
-Wird vor der Ausführung einer Gruppe ausgeführt.
+* Die Liste der Gruppen, vor denen diese Konfigurationsmethode ausgeführt wird. 
+* Diese Methode wird garantiert kurz vor dem Aufruf der ersten Testmethode ausgeführt, die zu einer dieser Gruppen gehört.
 
 Ein Beispiel ist in der Klasse [AnnotationTest](../src/test/java/AnnotationTest.java) zu finden:
 ```
@@ -85,6 +87,10 @@ public void initSimpleMathBeforeMethod() {
     simpleMathBeforeMethod = new SimpleMath();
 }
 ```
+
+### ```@BeforeMethod```
+
+Wird vor jeder Testmethode ausgeführt.
 
 ### ```@BeforeSuite```
 
