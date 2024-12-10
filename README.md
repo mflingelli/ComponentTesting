@@ -5,6 +5,10 @@
 Dieses Projekt zeigt, wie TestNG zu Komponententests und zur Bestimmung der Testabdeckung eingesetzt werden kann. 
 Die Darstellung der Testergebnisse erfolgt neben den TestNG-Report auch über Allure Report.
 
+## TestNG
+
+Weitere Informationen zu TestNG sind hier ausgeführt: [TestNG](doc/TestNG.md)
+
 ## Profile
 
 ### Allure
@@ -14,7 +18,7 @@ Das Allure-Plugin erzeugt einen Bericht über alle ausgeführten Tests, dieser i
 
 ### Coverage
 
-Dieses Profil enthält das JaCoCo-Plugin und erzeugt im Verzeicni ```target/site/jacoco``` einen Report, 
+Dieses Profil enthält das JaCoCo-Plugin und erzeugt im Verzeichnis ```target/site/jacoco``` einen Report, 
 welcher die Code-Abdeckung anzeigt.
 
 ## Quellen:
