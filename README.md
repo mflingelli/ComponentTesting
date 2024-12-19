@@ -21,6 +21,10 @@ Das Allure-Plugin erzeugt einen Bericht über alle ausgeführten Tests, dieser i
 Dieses Profil enthält das JaCoCo-Plugin und erzeugt im Verzeichnis ```target/site/jacoco``` einen Report, 
 welcher die Code-Abdeckung anzeigt.
 
+### Parameters
+
+In diesem Profil werden die in der Datei ```testng.xml``` definierten Testfälle ausgeführt.
+
 ## Quellen:
 
 * Allure Report: [https://allurereport.org/](https://allurereport.org/)

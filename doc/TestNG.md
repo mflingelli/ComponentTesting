@@ -131,3 +131,31 @@ public void getCircleAreaRadiusFromDataProvider(double radius, double expected) 
     Assert.assertEquals(new Geometry().getCircleArea(radius), expected, 0.005);
 }
 ```
+
+### ```@Parameters```
+
+Übergabe der Parameter aus einer XML-Datei an den Test.
+
+Ein Beispiel ist in der Klasse [ParametersTest](../src/test/java/ParametersTest.java) zu finden:
+```
+@Parameters({"a", "b"})
+@Test
+public void testAdd(int x, int y) {
+   Assert.assertEquals(new SimpleMath().add(x, y), x + y);
+}
+```
+
+Die dazugehörige XML-Datei [testng.xml](testng.xml) zu finden:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <parameter name="a" value="1"/>
+    <parameter name="b" value="2"/>
+    <test name="Testing with parameters">
+        <classes>
+            <class name= "ParametersTest"/>
+        </classes>
+    </test>
+</suite>
+```
