@@ -29,5 +29,7 @@ In diesem Profil werden die in der Datei ```testng.xml``` definierten Testfälle
 
 * Allure Report: [https://allurereport.org/](https://allurereport.org/)
 * Homepage TestNG: [https://testng.org/](https://testng.org/)
+* HowToDoInJava - TestNG: [https://howtodoinjava.com/testng/](https://howtodoinjava.com/testng/)
 * Java Code Coverage Library (JaCoCo): [https://github.com/jacoco/jacoco](https://github.com/jacoco/jacoco)
 * Maven Allure: [https://github.com/allure-framework/allure-maven](https://github.com/allure-framework/allure-maven)
+* Maven Surefire Plugin - Using TestNG: [https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html](https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html)

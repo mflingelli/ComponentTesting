@@ -21,9 +21,13 @@ jobs:
       run: mvn test --batch-mode -Dmaven.test.failure.ignore=true -PAllure
     - name: Build and run tests (JaCoCo)
       run: mvn test --batch-mode -Dmaven.test.failure.ignore=true -PJaCoCo
+    - name: Publish test report (JaCoCo)
+      uses: starburstdata/action-testng-report@v1
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Build and run tests (Parameters)
       run: mvn test --batch-mode -Dmaven.test.failure.ignore=true -PParameters
-    - name: Publish test report
+    - name: Publish test report (Parameters)
       uses: starburstdata/action-testng-report@v1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
