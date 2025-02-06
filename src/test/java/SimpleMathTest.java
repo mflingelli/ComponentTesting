@@ -28,6 +28,11 @@ public class SimpleMathTest {
         Assert.assertEquals(new SimpleMath().divide(15, 3), 5);
     }
 
+    @Test(groups = {"Arithmetic"})
+    public void testDivideNegative() {
+        Assert.assertEquals(new SimpleMath().divide(-15, -3), 5);
+    }
+
     @Test(groups = {"Arithmetic"},
             expectedExceptions = ArithmeticException.class)
     public void testDivideZero() {

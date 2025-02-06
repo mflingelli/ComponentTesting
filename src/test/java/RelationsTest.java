@@ -13,4 +13,9 @@ public class RelationsTest {
     public void testNotGreaterThan() {
         Assert.assertFalse(new Relations().isGreaterThan(1, 9));
     }
+
+    @Test(groups = {"Relations"})
+    public void testEquals() {
+        Assert.assertFalse(new Relations().isGreaterThan(6, 6));
+    }
 }

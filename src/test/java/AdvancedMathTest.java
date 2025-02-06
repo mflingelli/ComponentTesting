@@ -26,6 +26,7 @@ public class AdvancedMathTest {
 
     @Test(groups = {"Advanced recursion"},
             enabled = false,
+            timeOut = 5000,
             expectedExceptions = StackOverflowError.class)
     public void testAckermannDisabled() {
         Assert.assertEquals(new AdvancedMath().ackermann(20, 10), 8189);
