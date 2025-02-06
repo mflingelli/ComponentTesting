@@ -31,6 +31,7 @@ In diesem Profil werden die in der Datei ```testng.xml``` definierten Testfälle
 ## Quellen:
 
 * Allure Report: [https://allurereport.org/](https://allurereport.org/)
+* Hamcrest: [https://hamcrest.org/JavaHamcrest/](https://hamcrest.org/JavaHamcrest/)
 * Homepage TestNG: [https://testng.org/](https://testng.org/)
 * HowToDoInJava - TestNG: [https://howtodoinjava.com/testng/](https://howtodoinjava.com/testng/)
 * Java Code Coverage Library (JaCoCo): [https://github.com/jacoco/jacoco](https://github.com/jacoco/jacoco)

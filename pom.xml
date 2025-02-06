@@ -159,6 +159,11 @@
       <artifactId>allure-testng</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest</artifactId>
+      <version>3.0</version>
+    </dependency>
   </dependencies>
 
 </project>
