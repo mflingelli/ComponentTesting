@@ -46,9 +46,9 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
-      - name: Build and run tests (JaCoCo)
-        run: mvn test --batch-mode -Dmaven.test.failure.ignore=true -PJaCoCo
-      - name: Publish test report (JaCoCo)
+      - name: Build and run tests (Coverage)
+        run: mvn test --batch-mode -Dmaven.test.failure.ignore=true -RCoverage
+      - name: Publish test report (Coverage)
         uses: starburstdata/action-testng-report@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

@@ -145,7 +145,7 @@ public void testAdd(int x, int y) {
 }
 ```
 
-Die dazugehörige XML-Datei [testng.xml](testng.xml) zu finden:
+Die dazugehörige XML-Datei [testng.xml](../testng.xml) zu finden:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">

@@ -1,7 +1,7 @@
 public class AdvancedMath {
 
-    public long fac(long x) {
-        if (x < 0 ) {
+    public long fac(final long x) {
+        if (x < 0) {
             throw new ArithmeticException("Invalid input.");
         } else if (x == 0) {
             return 1;
@@ -10,7 +10,7 @@ public class AdvancedMath {
         }
     }
 
-    public long ackermann(long m, long n) {
+    public long ackermann(final long m, final long n) {
         if (m == 0) {
             return n + 1;
         }

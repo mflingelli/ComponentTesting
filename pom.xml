@@ -81,7 +81,7 @@
       </build>
     </profile>
     <profile>
-      <id>JaCoCo</id>
+      <id>Coverage</id>
       <build>
         <plugins>
           <plugin>
@@ -100,6 +100,10 @@
                 <goals>
                   <goal>report</goal>
                 </goals>
+                <configuration>
+                  <title>Test Coverage with JaCoCo</title>
+                  <footer>(c) Markus Flingelli, 2025</footer>
+                </configuration>
               </execution>
             </executions>
           </plugin>
@@ -132,6 +136,44 @@
           </plugin>
         </plugins>
       </build>
+    </profile>
+    <profile>
+      <id>Dependency-check</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.owasp</groupId>
+            <artifactId>dependency-check-maven</artifactId>
+            <version>12.0.2</version>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>check</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>Checkstyle</id>
+      <reporting>
+        <plugins>
+            <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-checkstyle-plugin</artifactId>
+            <version>3.6.0</version>
+            <reportSets>
+              <reportSet>
+                <reports>
+                  <report>checkstyle</report>
+                </reports>
+              </reportSet>
+            </reportSets>
+          </plugin>
+        </plugins>
+      </reporting>
     </profile>
   </profiles>
 
