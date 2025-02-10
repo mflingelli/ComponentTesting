@@ -47,7 +47,7 @@ jobs:
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
       - name: Build and run tests (Coverage)
-        run: mvn test --batch-mode -Dmaven.test.failure.ignore=true -RCoverage
+        run: mvn test --batch-mode -Dmaven.test.failure.ignore=true -PCoverage
       - name: Publish test report (Coverage)
         uses: starburstdata/action-testng-report@v1
         with:
