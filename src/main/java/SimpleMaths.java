@@ -1,4 +1,4 @@
-public class SimpleMath {
+public class SimpleMaths {
 
     public int add(final int x, final int y) {
         return x + y;

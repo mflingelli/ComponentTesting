@@ -9,7 +9,7 @@ public class HamcrestTest {
 
     @Test
     public void testAdd() {
-        SimpleMath simpleMath = new SimpleMath();
+        SimpleMaths simpleMath = new SimpleMaths();
         MatcherAssert.assertThat(simpleMath.add(1, 1), Matchers.greaterThanOrEqualTo(2));
     }
 

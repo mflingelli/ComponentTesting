@@ -1,4 +1,4 @@
-public class AdvancedMath {
+public class AdvancedMaths {
 
     public long fac(final long x) {
         if (x < 0) {

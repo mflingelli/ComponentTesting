@@ -7,14 +7,14 @@ public class ParametersTest {
 
     @Parameters({"a", "b"})
     @Test
-    public void testAdd(int x, int y) {
-        Assert.assertEquals(new SimpleMath().add(x, y), x + y);
+    public void testAdd(@Optional("0") int x, @Optional("0")int y) {
+        Assert.assertEquals(new SimpleMaths().add(x, y), x + y);
     }
 
     @Parameters({"a", "b"})
     @Test
-    public void testMultiply(int x, int y) {
-        Assert.assertEquals(new SimpleMath().multiply(x, y), x * y);
+    public void testMultiply(@Optional("0")int x, @Optional("0")int y) {
+        Assert.assertEquals(new SimpleMaths().multiply(x, y), x * y);
     }
 
     @Parameters("radius")

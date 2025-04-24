@@ -4,22 +4,22 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class AnnotationTest {
-    private SimpleMath simpleMathBeforeMethod;
-    private SimpleMath simpleMathBeforeGroups;
+    private SimpleMaths simpleMathBeforeMethod;
+    private SimpleMaths simpleMathBeforeGroups;
 
     @BeforeMethod(description = "This method is called before every test call.")
     public void initSimpleMathBeforeMethod() {
-        simpleMathBeforeMethod = new SimpleMath();
+        simpleMathBeforeMethod = new SimpleMaths();
     }
 
     @BeforeGroups(groups = {"Annotations"},
             description = "This method is called before the first call of method of this group.")
     public void initSimpleMathBeforeGroups() {
-        simpleMathBeforeGroups = new SimpleMath();
+        simpleMathBeforeGroups = new SimpleMaths();
     }
 
     @Test(groups = {"Annotations"})
-    public void testInitializedSimpleMath() {
+    public void testInitializedSimpleMaths() {
         Assert.assertNotNull(simpleMathBeforeMethod);
         System.out.println("Reference ID of simpleMathBeforeMethod: " + simpleMathBeforeMethod);
         System.out.println("Reference ID of simpleMathBeforeGroups: " + simpleMathBeforeGroups);

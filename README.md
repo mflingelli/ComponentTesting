@@ -20,7 +20,7 @@ Weitere Informationen zu TestNG sind hier ausgeführt: [TestNG](doc/TestNG.md)
 Das Allure-Plugin erzeugt einen Bericht über alle ausgeführten Tests, dieser ist im Verzeichnis
 `target/site/allure-maven-plugin` zu finden.
 
-Die Testergebnisse werden automatisch als Allure-Report erzeugt und auf GitHub hochgeladen:
+Die Testergebnisse werden automatisch als Allure-Report erzeugt und auf GitHubConnector hochgeladen:
 [https://mflingelli.github.io/ComponentTesting](https://mflingelli.github.io/ComponentTesting)
 
 ### Checkstyle
