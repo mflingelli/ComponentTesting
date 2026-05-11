@@ -18,6 +18,10 @@
     <developer>
       <name>Markus Flingelli</name>
       <email>markus.flingelli@gmx.de</email>
+      <roles>
+        <role>Developer</role>
+        <role>Tester</role>
+      </roles>
     </developer>
   </developers>
 
@@ -87,7 +91,7 @@
           <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.12</version>
+            <version>0.8.14</version>
             <executions>
               <execution>
                 <goals>
@@ -102,7 +106,7 @@
                 </goals>
                 <configuration>
                   <title>Test Coverage with JaCoCo</title>
-                  <footer>(c) Markus Flingelli, 2025</footer>
+                  <footer>(c) Markus Flingelli, 2025 - 2026</footer>
                 </configuration>
               </execution>
             </executions>

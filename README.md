@@ -78,6 +78,7 @@ verwendet werden müssen. Das ist besonders nützlich, wenn der getestete Code e
 * Apache Maven Projects
   * Checkstyle Plugin: [https://maven.apache.org/plugins/maven-checkstyle-plugin/](https://maven.apache.org/plugins/maven-checkstyle-plugin/)
   * Surefire Plugin: [https://maven.apache.org/surefire/maven-surefire-plugin/index.html](https://maven.apache.org/surefire/maven-surefire-plugin/index.html)
+* Checkstyle.org: [https://checkstyle.org/](https://checkstyle.org/)
 * Dependency-Check Maven: [https://jeremylong.github.io/DependencyCheck/](https://jeremylong.github.io/DependencyCheck/)
 * Hamcrest: [https://hamcrest.org/JavaHamcrest/](https://hamcrest.org/JavaHamcrest/)
 * Mockito: [https://site.mockito.org/](https://site.mockito.org/)
@@ -85,4 +86,3 @@ verwendet werden müssen. Das ist besonders nützlich, wenn der getestete Code e
 * TestNG: [https://testng.org/](https://testng.org/)
 * HowToDoInJava - TestNG: [https://howtodoinjava.com/testng/](https://howtodoinjava.com/testng/)
 * Java Code Coverage Library (JaCoCo): [https://github.com/jacoco/jacoco](https://github.com/jacoco/jacoco)
-* TestNG: [https://testng.org/](https://testng.org/)
