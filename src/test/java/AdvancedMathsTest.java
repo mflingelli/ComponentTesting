@@ -31,4 +31,19 @@ public class AdvancedMathsTest {
     public void testAckermannDisabled() {
         Assert.assertEquals(new AdvancedMaths().ackermann(20, 10), 8189);
     }
+
+    @Test(groups = {"ggT"})
+    public void testGgT() {
+        Assert.assertEquals(new AdvancedMaths().ggT(8, 48), 8);
+    }
+
+    @Test(groups = {"ggT"})
+    public void testGgTFromPrimeNumbers() {
+        Assert.assertEquals(new AdvancedMaths().ggT(13, 43), 1);
+    }
+
+    @Test(groups = {"ggT"})
+    public void testGgTFromNegativeNumbers() {
+        Assert.assertEquals(new AdvancedMaths().ggT(-24, -40), 8);
+    }
 }
