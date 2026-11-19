@@ -9,7 +9,8 @@
 3. [Hamcrest](#Hamcrest)
 4. [Mockito](#Mockito)
 5. [Mockserver-Netty](#Mockserver-Netty)
-6. [Quellen](#Quellen)
+6. [Xray-Test-Extension](#Xray Test Extension)
+7. [Quellen](#Quellen)
 
 Dieses Projekt zeigt, wie TestNG zu Komponententests und zur Bestimmung der Testabdeckung eingesetzt werden kann. 
 Die Bibliothek Hamcrest bietet viele Methoden, welche die Prüfung der Testergebnisse erleichtern. 
@@ -71,6 +72,10 @@ verwendet werden müssen. Das ist besonders nützlich, wenn der getestete Code e
 - Netty-Integration: Basiert auf Netty für hohe Leistung und asynchrone Verarbeitung. 
 - Einfache Integration mit Maven: Kann direkt aus pom.xml gestartet werden.
 
+## Xray-Test-Extension
+
+Dieses Projekt ermöglicht es, automatisierte @Test-Methoden direkt im Code über spezielle Annotationen mit Metadaten wie Jira-Anforderungen, Beschreibungen oder Beweisdateien (z. B. Screenshots) anzureichern. Diese Zusatzinformationen werden während der Testausführung erfasst und entweder als angepasster TestNG-XML-Bericht oder als Xray-JSON-Bericht (Beta) ausgegeben. Dadurch lassen sich Testergebnisse nahtlos in Testmanagement-Tools wie Xray importieren, verknüpfen oder automatisch als neue Xray-Tests anlegen.
+
 ## Quellen:
 
 * Allure Maven Plugin: [https://github.com/allure-framework/allure-maven](https://github.com/allure-framework/allure-maven)
@@ -86,3 +91,4 @@ verwendet werden müssen. Das ist besonders nützlich, wenn der getestete Code e
 * TestNG: [https://testng.org/](https://testng.org/)
 * HowToDoInJava - TestNG: [https://howtodoinjava.com/testng/](https://howtodoinjava.com/testng/)
 * Java Code Coverage Library (JaCoCo): [https://github.com/jacoco/jacoco](https://github.com/jacoco/jacoco)
+* Xray-Test-Extension: [https://github.com/Xray-App/xray-testng-extensions](https://github.com/Xray-App/xray-testng-extensions)
