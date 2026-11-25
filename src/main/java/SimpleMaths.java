@@ -1,6 +1,7 @@
 public class SimpleMaths {
 
     public int add(final int x, final int y) {
+        System.out.println("Adding " + x + " and " + y);
         return x + y;
     }
 
